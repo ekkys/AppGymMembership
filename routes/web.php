@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('dashboard.welcomepage');
+// });
+
+Route::get('/', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
